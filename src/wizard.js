@@ -115,7 +115,7 @@ angular.module('mgo-angular-wizard').directive('wizard', function() {
             //called each time step directive is destroyed
             this.removeStep = function (step) {
                 var index = $scope.steps.indexOf(step);
-                if (index > 0) {
+                if (index > -1) {
                     $scope.steps.splice(index, 1);
                 }
             };
